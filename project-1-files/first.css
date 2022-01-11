@@ -1,0 +1,501 @@
+/* GENERAL RULES */
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+section {
+    padding: .5em;
+
+}
+
+
+footer {
+    background-color: #bfbdbb;
+    font-size: .8rem;
+    width: 100%;
+    position: absolute;
+}
+
+
+img {
+    max-width: 35vw;
+    max-height: 20vh;
+
+}
+
+
+div > p, div > span {
+    font-size: 12px;
+    text-align: center;
+
+}
+
+
+button {
+    margin: .5rem;
+
+}
+
+
+form {
+    margin: .25em;
+
+}
+
+
+label {
+    margin-bottom: .5em;
+
+}
+
+
+.headerspace {
+    margin: 1em;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: 'arial', serif;
+    line-height: 1; 
+    font-weight: bold;
+}
+
+
+.headerspace p {
+    font-family: 'Gramond', serif;
+    color: #05be87;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.main {
+    flex: 1;
+
+}
+
+
+.visuals, .form-around {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: .5rem;
+    padding: 1rem;
+    flex: 1;
+
+}
+
+
+.holdcenter {
+    justify-content: center;
+
+}
+
+
+.button, input {
+    margin-top: 2em;
+    padding: .25em;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #72d8b9;
+    color: white;
+
+}
+
+.msg, .secondmoment, .journaltoday, .labelhide {
+    display: none;
+
+}
+
+.activities {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+
+}
+
+.text-center {
+    text-align: center;
+
+}
+
+/* cards */
+.cards {
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    flex: 0 0 250px;
+    background-color: white;
+    margin: .5rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+
+}
+
+.card p {
+    padding: .5rem 1rem;
+
+}
+
+.section2 {
+    flex: 1;
+    background-color: #eee;
+
+}
+
+div.card > h2 {
+    padding: 1em;
+
+}
+
+
+/* NAV BAR */
+
+.nav-color {
+    background-color: #72d8b9;
+
+}
+
+nav img {
+    width: 60px;
+    height: 50px;
+
+}
+
+.move-back {
+    margin-top: .25em;
+
+}
+
+
+/* MONTH & DAY OVERVIEW GRID AREAS */
+
+.visuals:nth-child(1) {
+    flex: auto;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: gainsboro;
+    justify-items: center;
+    border-radius: 10px;
+
+}
+
+
+.overview {
+    grid-template-columns: repeat(12, 1fr);
+    background-color: whitesmoke;
+    width: 95%;
+
+}
+
+/* day dots */
+.grid-box {
+    margin: .5rem;
+    width: 5vw;
+    height: 2vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.colored-box:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+/* every two hours on today overview */
+.bihour {
+    width: 1.5vw;
+    margin: .5px;
+    border-radius: 10px;
+    align-self: end;
+
+}
+
+.mood-word {
+    color: #05be87;
+}
+
+/* MOMENTS */
+
+.flex-container.img-container {
+    justify-content: center;
+
+}
+
+
+.moreimgspace {
+    display: none;
+
+}
+
+
+
+/* FORM */
+
+.range-form {
+    width: 100%;
+
+}
+
+
+.main-labels {
+    margin-top: 1em;
+
+}
+
+
+.form-space {
+    margin-top: 3em;
+    margin-bottom: .5em;
+    text-align: left;
+
+}
+
+.momentsbutton {
+    margin-top: 0;
+
+}
+
+
+
+/* RESOURCES */
+
+.resources {
+    flex: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+
+.resources a {
+    display: block;
+    color: #029669;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.resourceimg {
+    width: 100%;
+
+}
+
+
+
+/* COLORING GRID BOXES AND OTHER ELEMENTS*/
+
+.not-yet {
+    background-color: #d1d1d1;
+    /* #bfbdbb; */
+
+}
+
+.to-go {
+    background-color: white;
+
+}
+
+.one {
+    background-color: #d15252;
+
+}
+
+.two {
+    background-color: #eb8e42;
+
+}
+
+.three {
+    background-color: #fcd74e;
+
+}
+
+.four {
+    background-color: #62de49;
+
+}
+
+.five {
+    background-color: #6fcaed;
+    
+}
+
+.bihour.one {
+    height: 2.5vh;
+
+}
+
+.bihour.two {
+    height: 5vh;
+
+}
+
+.bihour.three {
+    height: 7.5vh;
+
+}
+
+.bihour.four {
+    height: 10vh;
+
+}
+
+.bihour.five, .bihour.not-yet {
+    height: 12.5vh;
+
+}
+
+.button-hover {
+    background-color: #4f9781;
+    border-color: white;
+
+}
+
+.grid-hover {
+    opacity: 0.7;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dedede;
+
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 485px) {
+
+    /* General text */
+    div > p, div > span {
+        font-size: 14px;
+    
+    }
+
+    /* Overhead box */
+    .moveside {
+        display: flex;
+
+    }
+
+    .msg {
+        display: block;
+        margin: .5rem;
+
+    }
+
+    .grid-box {
+        height: 4vh;
+
+    }
+
+}
+
+
+
+@media (min-width: 598px) {
+
+    img {
+        max-width: 40vw;
+        max-height: 25vh;
+
+    }
+
+    /* Adjusting pills */
+    .grid-box {
+        height: 3vh;
+        width: 4vw;
+
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    /* Resizing pills */
+    .grid-box {
+        width: 4vh;
+
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+    img {
+        max-width: 17vw;
+
+    }
+
+    /* General text */
+    div > p, div > span {
+        font-size: 15px;
+    
+    }
+
+    /* Moving resource bar to size */
+    .resources {
+        flex: 0;
+        margin-right: 1em;
+
+    }
+
+    .resourceimg {
+        max-height: 12vh;
+
+    }
+
+    /* Adding today's reflection to overhead */
+    .journaltoday {
+        display: inline-block;
+
+    }
+
+    /* Removing status/insight text */
+    .statusmsg {
+        display: none;
+
+    }
+
+    /* Aligning second moment image */
+    .secondmoment {
+        display: inline-block;
+        text-align: center;
+        margin-left: .5em;
+
+    }
+
+    .resources a {
+        font-size: small;
+
+    }
+
+}
+
+
+@media (min-width: 1700px) {
+    /* General text */
+    div > p, div > span, li {
+        font-size: 17px;
+    
+    }
+
+}

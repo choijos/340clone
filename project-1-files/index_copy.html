@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Emelia Hughes, Jerry Wang, Jossie Choi">
+  <meta name="description" content="This website allow users to record and track their daily activities and mood. Doing so can provide insights into your emotional and even physical wellbeing.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mood Journal</title>
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <link rel="icon" type="png" href="img/noun_journal_2292490.png">
+  <script src="https://kit.fontawesome.com/63f8408e57.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/draftstyle.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light nav-color">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/noun_journal_2292490.png" alt="a journal icon" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">My Journal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="form.html">Daily Entry</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">More</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <label for="search_bar" class="labelhide">Search Bar</label>
+          <input class="form-control me-2 move-back" id="search_bar" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" aria-label="search"><em class="fas fa-search" aria-label="Search icon"></em></button>
+        </form>
+        <button class="btn btn-outline-success" type="submit" aria-label="account"><em class="fas fa-user-circle" aria-label="User icon"></em>Aria</button>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="headerspace">
+      <h1>Mood Journal</h1>
+      <p>Track your emotional life</p>
+    </div>
+  </header>
+  <main>
+    <!-- begin main stuff div -->
+    <div class="flex-container">
+      <!-- main section of page -->
+      <section class="main">
+        <div class="flex-container">
+          <!-- overhead pixel box -->
+          <div class="visuals">
+            <h2 class="h3">{Month} In Color</h2>
+            <div class="moveside">
+              <div class="grid" aria-label="Overview of mood for the month">
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+              </div>
+              <div class="flex-container msg">
+                <p class="text-info"><strong>Click on one of the month grid boxes with color to view details from that day!</strong></p>
+                <span class="statusmsg"><p>The weather is only supposed to get colder! Be sure to take care of yourself during these long nights by getting a full nights rest ~*</p></span>
+                <span class="journaltoday"><h2 class="h3">Previous Reflection</h2>
+                <p class="display-ref">It was hard to get up and out of bed today, I accidentally left the window open so the room was freezing. I was super excited to finally get out of the house though after being cooped up. It was nice to see Ash and everyone again off campus. Here's to hoping for a more active and productive week.</p></span> 
+              </div>
+            </div>
+          </div>
+
+          <!-- Day overview -->
+          <div class="visuals" id="day">
+            <h2 class="h3">Overview of Day</h2>
+            <div class="overview-content">
+              <p class="avg-mood">Today, you reported feeling <strong class="mood-word">excited</strong> throughout the day</p>
+              <div class="text-center">
+                <ul class="activities">
+                  <p>Your activities from today included</p>
+                  <li>Getting coffee with Ash</li>
+                  <li>time outside of the house</li>
+                </ul>
+              </div>
+              <p class="user-highlight">Your highlight of the day was "Got a good amount of sleep and woke up pretty refreshed"</p>
+              <p class="user-struggle">Your struggle of the day was "Was not very productive despite getting a good amount of sleep"</p>
+            </div>
+          </div>
+
+          <!-- Moments box -->
+          <div class="visuals">
+            <h2 class="h3">Moments</h2>
+            <div class="flex-container img-container" id="moments">
+              <div>
+                <img src="img/friends.jpg" alt="Night with friends at the beach">
+                <p><cite><a href="https://unsplash.com/photos/AZMmUy2qL6A">At the beach</a></cite></p>
+              </div>
+              <div class="secondmoment">
+                <img src="img/project.jpg" alt="Working on project">
+                <p><cite><a href="https://unsplash.com/photos/5fNmWej4tAA">Working</a></cite></p>
+              </div>
+            </div>
+            <div class="flex-container holdcenter">
+              <div class="main-labels">
+                <label for="image-upload" class="main-labels">Upload New Moment: </label>
+                <input type="file" accept="image/png, image/jpg" id="image-upload" name="moments" value="Image" onchange="loadFile(event)" class="button">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- Resources -->
+      <section class="visuals resources">
+        <h2 class="h3">Resources</h2>
+        <div class="row">
+          <div class="col col-6 col-sm-4 col-lg-12 holdcenter">
+            <img src="img/woman-journaling.jpg" class="resourceimg" alt="Woman journaling">
+            <p><cite><a href="https://www.healthline.com/health/how-to-control-your-emotions">Maintaining Emotions</a></cite></p>
+          </div>
+          <div class="col col-6 col-sm-4 col-lg-12 holdcenter">
+            <img src="img/alone.jpg" class="resourceimg" alt="Feeling alone">
+            <p><cite><a href="https://www.npr.org/sections/health-shots/2020/05/10/849164258/too-much-alone-time-tips-to-connect-and-find-joy-while-social-distancing">Social Distanced Socializing</a></cite></p>
+          </div>
+          <div class="col col-6 col-sm-4 col-lg-12 holdcenter">
+            <img src="img/bhc-ogimg.png" class="resourceimg" alt="Better health channel logo">
+            <p><cite><a href="https://www.betterhealth.vic.gov.au/health/HealthyLiving/monitoring-your-mood#:~:text=Monitoring%20your%20mood-,Understanding%20your%20moods%20helps%20you%20manage%20them%20and%20feel%20better,a%20better%20quality%20of%20life.">Benefits of Mood Tracking</a></cite></p>
+          </div>
+          <div class="col col-6 col-sm-4 col-lg-12 holdcenter">
+            <img src="img/parity.jpg" class="resourceimg" alt="Inner mind working">
+            <p><cite><a href="https://www.mentalhealth.gov/">mentalhealth</a></cite></p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end main stuff div -->
+  </main>
+  <footer class="footer">
+    <p>Author: Emelia Hughes, Jerry Wang, Jossie Choi</p>
+    <p>&copy; Copyright 2021</p>
+  </footer>
+
+  <!-- Loading js scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js" integrity="sha512-IsoGB9P1Kjw962zrslxT91OfoKkAnlBfQDdh5HwFvOxwJ8xGV6MuDeAli4TkEMiUqhJVkvpxJBsIS14bSERgxA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.2.8/es6-promise.min.js" integrity="sha512-JMK7ImCd/9VxQM7FWvAT3njqo5iGKkWcOax6Bwzuq48xxFd7/jekKcgN+59ZRwBoEpZvv6Jkwh3fDGrBVWX5vA==" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

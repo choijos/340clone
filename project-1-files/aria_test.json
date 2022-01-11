@@ -1,0 +1,83 @@
+{
+    "days":
+    [{
+        "date": "2021-03-01",
+        "avgMood": 2,
+        "activities": ["Drank water", "studied", "Cooked a steak for dinner"],
+        "highlights": "Got all my stuff done",
+        "struggles": "Psych test came back today, I didn't do too well.",
+        "reflection": "Stayed home and did literally nothing but school work and bingeing netflix. I really need to get out and do something. I wonder when everything is going to open back up."
+    },
+    {
+        "date": "2021-03-02",
+        "avgMood": 2,
+        "activities": ["Studied", "Got a full night's sleep"],
+        "highlights": "Got a good amount of sleep and woke up pretty refreshed",
+        "struggles": "Was not very productive despite getting a good amount of sleep",
+        "reflection": "Not much happened today to be honest, I just layed in bed and chilled cause it's the weekend. I've been super lazy, gotta get everything done soon."
+    },
+    {
+        "date": "2021-03-03",
+        "avgMood": 4,
+        "activities": ["Drank water", "Met a Friend"],
+        "highlights": "I got to meet up with Megan today which was really nice. We went out and got lunch and just hung out.",
+        "struggles": "Realized how deprived I've been of human contact after hanging out with Megan. This pandemic has been draining.",
+        "reflection": "Today was a nice boost, and I feel both better and more aware of the fact that I need to get out and take care of myself even though we're in the middle of a pandemic."
+    },
+    {
+        "date": "2021-03-04",
+        "avgMood": 3,
+        "activities": ["Drank water", "Studied"],
+        "highlights": "Classes weren't too grueling.",
+        "struggles": "Did not get much sleep at all last night, and I ended up going to class super late",
+        "reflection": "Today was just not my day. I really didn't want to get up and basically missed the first half of psych. Felt a little better after a quick nap but still drained."
+    },
+    {
+        "date": "2021-03-05",
+        "avgMood": 3,
+        "activities": ["Drank Water", "Got a full night's sleep", "Cooked a steak for dinner"],
+        "highlights": "Actually got a good amount of sleep last night, mostly because I was so tired yesterday and went to bed early.",
+        "struggles": "I literally could not focus during class and realized that I am not prepared for the quiz next week.",
+        "reflection": "Today wasn't too bad, but I was super distracted during class for some reason. It's so easy to literally just stay on my phone while on Zoom. I've decided that I'm going to start studying early for the quiz next week cause I really need to do well on it."
+    },
+    {
+        "date": "2021-03-06",
+        "avgMood": 1,
+        "activities": ["Chilling at home"],
+        "highlights": "Didn't have any highlight today",
+        "struggles": "Started panicking because I realized I literally don't know what I'm doing.",
+        "reflection": "Well, I tried to start studying for the quiz like I told myself I would yesterday. I shouldn't have done that though. I realized how far behind I am on the material even though I go to class."
+    },
+    {
+        "date": "2021-03-07",
+        "avgMood": 2,
+        "activities": ["Studied"],
+        "highlights": "Made it to class on time",
+        "struggles": "Dropped two eggs while making lunch",
+        "reflection": "Feeling better than I was yesterday. Still not feeling great though, all I did was go to class and watch netflix. Today wasn't too bad, but I was super distracted during class for some reason. It's so easy to literally just stay on my phone while on Zoom. I've decided that I'm going to start studying early for the quiz next week cause I really need to do well on it."
+    },
+    {
+        "date": "2021-03-08",
+        "avgMood": 2,
+        "activities": ["Drank water"],
+        "highlights": "Made it to class on time",
+        "struggles": "Felt super tired all throughout the day",
+        "reflection": "Didn't get a lot of sleep and I caught myself falling asleep during class. Wasn't a really productive day but I had to cram for the quiz next week"
+    },
+    {
+        "date": "2021-03-09",
+        "avgMood": 3,
+        "activities": ["Met a Friend", "Snowboarding"],
+        "highlights": "Went out with the family to the pass",
+        "struggles": "Not too much today",
+        "reflection": "Today was actually a pretty good day. I went out with the family and we went snowboarding on the pass which was really fun."
+    },
+    {
+        "date": "2021-03-10",
+        "avgMood": 5,
+        "activities": ["Met a Friend", "Studied"],
+        "highlights": "Had coffee with Josh",
+        "struggles": "Had a really hard time getting up",
+        "reflection": "Today was a really nice day. I got to meet up with Josh at a cafe and just chill. It was hard to get started with the day, but was probably the best day I had in awhile. I just really hope that I can survive the rest of the quarter now that we're approaching the end, I'm not excited for finals..."
+    }]
+}

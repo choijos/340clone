@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Daily Entry</title>
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/63f8408e57.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/draftstyle.css">
+</head>
+
+<body>
+ <!-- Page Title -->
+  <nav class="navbar navbar-expand-lg navbar-light nav-color">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/noun_journal_2292490.png" alt="a journal icon" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">My Journal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="form.html">Daily Entry</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">More</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <label for="search_bar" class="labelhide">Search Bar</label>
+          <input class="form-control me-2 move-back" type="search" id="search_bar" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" aria-label="search"><em class="fas fa-search" aria-label="Search icon"></em></button>
+        </form>
+        <button class="btn btn-outline-success" type="submit" aria-label="account"><em class="fas fa-user-circle" aria-label="User icon"></em>Aria</button>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="headerspace">
+      <h1>Daily Entry</h1>
+      <p>Log your daily feelings and activities.</p>
+    </div>
+  </header>
+  <main>
+    <!-- Daily Form -->
+    <section>
+      <form id="form-grab">
+        <div class="form-around">
+          <h2>How was your day?</h2>
+
+          <div class="row">
+            <div class="col col-12 col-sm-6">
+              <label for="journal_date" class="main-labels"><h3 class="small">Journal Date:</h3></label>
+              <input type="date" class="form-control" id="journal_date" name="journal_date">
+            </div>
+            <div class="col col-12 col-sm-6">
+              <label for="mood" class="main-labels"><h3 class="small">Rate your average mood on a scale of 0-5:</h3></label>
+              <input type="range" class="range-form" id="mood" list="ticks" name="mood" min="1" max="5" step="1">
+              <!-- range input ticks -->
+              <datalist id="ticks">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+              </datalist>
+            </div>
+          </div>
+          <div class="form-space">
+            <h3 class="small">Daily Activites:</h3>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" id="activity1" name="activity1" value="Drank Water">
+              <label for="activity1">Drank water</label><br>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" id="activity2" name="activity2" value="Got a Full night's sleep">
+              <label for="activity2">Got a full night's sleep</label><br>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" id="activity3" name="activity3" value="Exercised">
+              <label for="activity3">Exercised</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" id="activity4" name="activity4" value="Met a friend">
+              <label for="activity4">Met a Friend</label>
+            </div>
+          </div>
+          <div>
+            <label for="highlight_field" class="main-labels"><h3 class="small">Highlight(s) of the day:</h3></label>
+            <textarea class="form-control" id="highlight_field" name="highlight"></textarea>
+            <label for="struggle_field" class="main-labels"><h3 class="small">Struggle(s) of the day:</h3></label>
+            <textarea class="form-control" id="struggle_field" name="struggle"></textarea>
+            <label for="main_journal_field" class="main-labels"><h3 class="small">Reflecting on today:</h3></label>
+            <textarea class="form-control" id="main_journal_field" name="entry"></textarea>
+          </div>
+        <!-- image upload placement -->
+          <div class="flex-container holdcenter">
+            <button type="save" class="button" id="submit-button"><em aria-label="save entry"><strong>Save journal entry</strong></em></button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="section2">
+      <div class="row cards">
+        <div class="card col">
+          <!-- Card 1 -->
+          <h2 class="h3">Journal Date: 2021-02-01</h2>
+          <p>Mood Score: 2</p>
+          <p>Activities: Drank water, studied</p>
+          <p>Daily Highlight: Got all my stuff done</p>
+          <p>Daily Struggle: Psych test came back today, I didn't do too well.</p>
+          <p>Daily Journal: Stayed home and did literally nothing but school work and bingeing netflix. I really need to get out and do something.</p>
+        </div>
+
+        <div class="card col">
+          <h2 class="h3">Journal Date: 2021-02-02</h2>
+          <p>Mood Score: 2</p>
+          <p>Activities: Studied, Got a full night's sleep</p>
+          <p>Daily Highlight: Got a good amount of sleep and woke up pretty refreshed</p>
+          <p>Daily Struggle: Was not very productive despite getting a good amount of sleep</p>
+          <p>Daily Journal: Not much happened today to be honest, I just layed in bed and chilled cause it's the weekend.</p>
+        </div>
+
+        <div class="card col">
+          <h2 class="h3">Journal Date: 2021-02-03</h2>
+          <p>Mood Score: Drank water, Met a Friend</p>
+          <p>Activities: I got to meet up with Megan today which was really nice. We went out and got lunch and just hung out.</p>
+          <p>Daily Highlight: Realized how deprived I've been of human contact after hanging out with Megan. This pandemic has been draining.</p>
+          <p>Daily Struggle: </p>
+          <p>Daily Journal: Today was a nice boost, and I feel both better and more aware of the fact that I need to get out and take care of myself even though we're in the middle of a pandemic.</p>
+        </div>
+      </div>
+    </section>
+  </main> 
+  <footer class="footer">
+    <p>Author: Emelia Hughes, Jerry Wang, Jossie Choi</p>
+    <p>&copy; Copyright 2021</p>
+  </footer>
+
+  <!-- Loading js scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js" integrity="sha512-IsoGB9P1Kjw962zrslxT91OfoKkAnlBfQDdh5HwFvOxwJ8xGV6MuDeAli4TkEMiUqhJVkvpxJBsIS14bSERgxA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.2.8/es6-promise.min.js" integrity="sha512-JMK7ImCd/9VxQM7FWvAT3njqo5iGKkWcOax6Bwzuq48xxFd7/jekKcgN+59ZRwBoEpZvv6Jkwh3fDGrBVWX5vA==" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
